@@ -1,0 +1,1729 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MyPluginWidget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>979</width>
+    <height>657</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>610</y>
+     <width>80</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Start</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="quit_button">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>610</y>
+     <width>80</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="tab_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>941</width>
+     <height>571</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>2</number>
+   </property>
+   <widget class="QWidget" name="trigger_setting">
+    <attribute name="title">
+     <string>Trigger_setting</string>
+    </attribute>
+    <widget class="QLineEdit" name="channel_4_freq_input">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>210</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="inputMask">
+      <string>000</string>
+     </property>
+     <property name="text">
+      <string>30</string>
+     </property>
+     <property name="maxLength">
+      <number>3</number>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="dragEnabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="start_indicator_enable">
+     <property name="geometry">
+      <rect>
+       <x>780</x>
+       <y>300</y>
+       <width>175</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>disable</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="channel_2_width_input">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>130</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="inputMask">
+      <string>00000</string>
+     </property>
+     <property name="text">
+      <string>2000</string>
+     </property>
+     <property name="maxLength">
+      <number>5</number>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="dragEnabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="channel_lable">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>40</y>
+       <width>101</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Channel&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="channel_clock_1_lable">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>270</y>
+       <width>101</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Clock Channel&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="channel_2_type">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>130</y>
+       <width>121</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="editable">
+      <bool>false</bool>
+     </property>
+     <item>
+      <property name="text">
+       <string>Rising edge</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Falling edge</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Double edge</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="frequency_lable">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>40</y>
+       <width>91</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Frequency(hz)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="channel_2_freq_input">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>130</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="inputMask">
+      <string>000</string>
+     </property>
+     <property name="text">
+      <string>200</string>
+     </property>
+     <property name="maxLength">
+      <number>3</number>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="dragEnabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="channel_clock_offset_input">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>270</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="inputMask">
+      <string>#00000</string>
+     </property>
+     <property name="text">
+      <string>+00000</string>
+     </property>
+     <property name="maxLength">
+      <number>6</number>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="dragEnabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="channel_3_lable">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>170</y>
+       <width>101</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Channel 3&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="channel_3_offset_input">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>170</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="inputMask">
+      <string>#00000</string>
+     </property>
+     <property name="text">
+      <string>+00000</string>
+     </property>
+     <property name="maxLength">
+      <number>6</number>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="dragEnabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="width_label">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>40</y>
+       <width>101</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Pulse Width(μs)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="channel_clock_width_input">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>270</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="inputMask">
+      <string>00000</string>
+     </property>
+     <property name="text">
+      <string>2000</string>
+     </property>
+     <property name="maxLength">
+      <number>5</number>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="dragEnabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="stop_freq_label">
+     <property name="geometry">
+      <rect>
+       <x>630</x>
+       <y>40</y>
+       <width>121</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Stop Frequency(hz)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="channel_4_width_input">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>210</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="inputMask">
+      <string>00000</string>
+     </property>
+     <property name="text">
+      <string>2000</string>
+     </property>
+     <property name="maxLength">
+      <number>5</number>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="dragEnabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="channel_4_stop_ratio">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>210</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="inputMask">
+      <string>000</string>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="maxLength">
+      <number>3</number>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="dragEnabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="channel_3_enable">
+     <property name="geometry">
+      <rect>
+       <x>780</x>
+       <y>170</y>
+       <width>175</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>disable</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="channel_2_offset_input">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>130</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="inputMask">
+      <string>#00000</string>
+     </property>
+     <property name="text">
+      <string>+00000</string>
+     </property>
+     <property name="maxLength">
+      <number>6</number>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="dragEnabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="channel_1_type">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>90</y>
+       <width>121</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="editable">
+      <bool>false</bool>
+     </property>
+     <item>
+      <property name="text">
+       <string>Rising edge</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Falling edge</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Double edge</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLineEdit" name="start_indicator_width_input">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>310</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="inputMask">
+      <string>00000</string>
+     </property>
+     <property name="text">
+      <string>2000</string>
+     </property>
+     <property name="maxLength">
+      <number>5</number>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="dragEnabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="channel_3_width_input">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>170</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="inputMask">
+      <string>00000</string>
+     </property>
+     <property name="text">
+      <string>2000</string>
+     </property>
+     <property name="maxLength">
+      <number>5</number>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="dragEnabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="channel_1_offset_input">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>90</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="inputMask">
+      <string>#00000</string>
+     </property>
+     <property name="text">
+      <string>+00000</string>
+     </property>
+     <property name="maxLength">
+      <number>6</number>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="dragEnabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="channel_1_width_input">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>90</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="inputMask">
+      <string>00000</string>
+     </property>
+     <property name="text">
+      <string>2000</string>
+     </property>
+     <property name="maxLength">
+      <number>5</number>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="dragEnabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="channel_4_enable">
+     <property name="geometry">
+      <rect>
+       <x>780</x>
+       <y>210</y>
+       <width>175</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>disable</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="start_indicator_type">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>310</y>
+       <width>121</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="editable">
+      <bool>false</bool>
+     </property>
+     <item>
+      <property name="text">
+       <string>High Gate</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Low Gate</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Double Paulse</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QCheckBox" name="channel_2_enable">
+     <property name="geometry">
+      <rect>
+       <x>780</x>
+       <y>130</y>
+       <width>175</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>disable</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="channel_clock_freq_input">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>270</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="inputMask">
+      <string>000</string>
+     </property>
+     <property name="text">
+      <string>120</string>
+     </property>
+     <property name="maxLength">
+      <number>3</number>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="dragEnabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="channel_1_stop_ratio">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>90</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="inputMask">
+      <string>000</string>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="maxLength">
+      <number>3</number>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="dragEnabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="start_indicator_lable">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>310</y>
+       <width>101</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Start Indicator&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="channel_1_lable">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>90</y>
+       <width>101</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Channel 1&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="channel_3_freq_input">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>170</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="inputMask">
+      <string>000</string>
+     </property>
+     <property name="text">
+      <string>30</string>
+     </property>
+     <property name="maxLength">
+      <number>3</number>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="dragEnabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="type_labe">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>40</y>
+       <width>81</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Trigger Type&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="channel_clock_enable">
+     <property name="geometry">
+      <rect>
+       <x>780</x>
+       <y>260</y>
+       <width>175</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>disable</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="channel_4_offset_input">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>210</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="inputMask">
+      <string>#00000</string>
+     </property>
+     <property name="text">
+      <string>+00000</string>
+     </property>
+     <property name="maxLength">
+      <number>6</number>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="dragEnabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="start_indicator_offset_input">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>310</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="inputMask">
+      <string>#00000</string>
+     </property>
+     <property name="text">
+      <string>+00000</string>
+     </property>
+     <property name="maxLength">
+      <number>6</number>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="dragEnabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="channel_1_freq_input">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>90</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="inputMask">
+      <string>000</string>
+     </property>
+     <property name="text">
+      <string>30</string>
+     </property>
+     <property name="maxLength">
+      <number>3</number>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="dragEnabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="channel_2_lable">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>130</y>
+       <width>101</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Channel 2&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="channel_3_type">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>170</y>
+       <width>121</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="editable">
+      <bool>false</bool>
+     </property>
+     <item>
+      <property name="text">
+       <string>Rising edge</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Falling edge</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Double edge</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="offset_label">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>40</y>
+       <width>71</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Offset(μs)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="channel_2_stop_ratio">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>130</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="inputMask">
+      <string>000</string>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="maxLength">
+      <number>3</number>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="dragEnabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="channel_4_type">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>210</y>
+       <width>121</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="editable">
+      <bool>false</bool>
+     </property>
+     <item>
+      <property name="text">
+       <string>Rising edge</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Falling edge</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Double edge</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QCheckBox" name="channel_1_enable">
+     <property name="geometry">
+      <rect>
+       <x>780</x>
+       <y>90</y>
+       <width>175</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>disable</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="channel_4_lable">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>210</y>
+       <width>101</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Channel 4&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="channel_clock_type">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>270</y>
+       <width>121</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="editable">
+      <bool>false</bool>
+     </property>
+     <item>
+      <property name="text">
+       <string>Rising edge</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Falling edge</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Double edge</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLineEdit" name="channel_3_stop_ratio">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>170</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="inputMask">
+      <string>000</string>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="maxLength">
+      <number>3</number>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="dragEnabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="channel_1_stop_freq_enable">
+     <property name="geometry">
+      <rect>
+       <x>630</x>
+       <y>90</y>
+       <width>31</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="channel_2_stop_freq_enable">
+     <property name="geometry">
+      <rect>
+       <x>630</x>
+       <y>130</y>
+       <width>31</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="channel_3_stop_freq_enable">
+     <property name="geometry">
+      <rect>
+       <x>630</x>
+       <y>170</y>
+       <width>31</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="channel_4_stop_freq_enable">
+     <property name="geometry">
+      <rect>
+       <x>630</x>
+       <y>210</y>
+       <width>31</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="stop_freq_label_2">
+     <property name="geometry">
+      <rect>
+       <x>770</x>
+       <y>40</y>
+       <width>111</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Channel enable&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="microcontroller_setting">
+    <attribute name="title">
+     <string>Microcontroller Setting</string>
+    </attribute>
+    <widget class="QComboBox" name="serial_port">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>40</y>
+       <width>221</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="serial_port_lable">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>40</y>
+       <width>171</width>
+       <height>34</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Serial Port</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="serial_port_congfig_button">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>120</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Config Setting</string>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="setting_show_browser">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>220</y>
+       <width>551</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Please set Trigger Setting block,  choose serial port.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;And then click 'Config Setting' button.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="serial_port_search_button">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>40</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Search</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="reconstruct_setting">
+    <attribute name="title">
+     <string>Reconstruct Setting</string>
+    </attribute>
+    <widget class="QLabel" name="bag_label">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>30</y>
+       <width>101</width>
+       <height>34</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bag Export</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="bag_export_enable">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>30</y>
+       <width>91</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>disable</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="bag_path_editor">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>40</y>
+       <width>311</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>~/test.bag</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="bag_path_label">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>43</y>
+       <width>65</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bag Path:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="online_refactor_label">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>70</y>
+       <width>141</width>
+       <height>34</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Online Refactor</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="online_export_enable">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>70</y>
+       <width>175</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>disable</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="channel_1_lable_reconstruct">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>170</y>
+       <width>81</width>
+       <height>34</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Channel 1</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="channel_1_topic_1_input">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>160</y>
+       <width>261</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="channel_1_topic_2_input">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>190</y>
+       <width>261</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="topic_input_lable">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>110</y>
+       <width>101</width>
+       <height>34</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Topic Input</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="topic_output_lable">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>110</y>
+       <width>141</width>
+       <height>34</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Topic Output</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="channel_1_topic_2_output">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>190</y>
+       <width>261</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="channel_1_topic_1_output">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>160</y>
+       <width>261</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="channel_2_lable_reconstruct">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>240</y>
+       <width>81</width>
+       <height>34</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Channel 2</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="channel_2_topic_1_output">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>230</y>
+       <width>261</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="channel_2_topic_2_input">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>260</y>
+       <width>261</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="channel_2_topic_1_input">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>230</y>
+       <width>261</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="channel_2_topic_2_output">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>260</y>
+       <width>261</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="topic_output_lable_2">
+     <property name="geometry">
+      <rect>
+       <x>740</x>
+       <y>110</y>
+       <width>121</width>
+       <height>34</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Massage Type</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="channel_1_type_box">
+     <property name="geometry">
+      <rect>
+       <x>730</x>
+       <y>170</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>Image</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>IMU</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Point Cloud</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Stamped Pose</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="channel_2_type_box">
+     <property name="geometry">
+      <rect>
+       <x>730</x>
+       <y>240</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <item>
+      <property name="text">
+       <string>Image</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>IMU</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Point Cloud</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Stamped Pose</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="channel_enable">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>110</y>
+       <width>141</width>
+       <height>34</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Channel enable</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="channel_1_topic_1_enable">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>150</y>
+       <width>31</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="channel_1_topic_2_enable">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>180</y>
+       <width>31</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="channel_2_topic_1_enable">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>220</y>
+       <width>31</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="channel_2_topic_2_enable">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>250</y>
+       <width>31</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="channel_3_topic_1_output">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>300</y>
+       <width>261</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="channel_3_topic_2_input">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>330</y>
+       <width>261</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="channel_3_topic_1_enable">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>290</y>
+       <width>31</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="channel_3_topic_2_output">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>330</y>
+       <width>261</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="channel_3_topic_1_input">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>300</y>
+       <width>261</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="channel_3_lable_reconstruct">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>300</y>
+       <width>81</width>
+       <height>34</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Channel 3</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="channel_3_type_box">
+     <property name="geometry">
+      <rect>
+       <x>730</x>
+       <y>310</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <item>
+      <property name="text">
+       <string>Image</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>IMU</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Point Cloud</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Stamped Pose</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QCheckBox" name="channel_3_topic_2_enable">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>320</y>
+       <width>31</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="channel_4_topic_1_output">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>370</y>
+       <width>261</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="channel_4_topic_2_input">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>400</y>
+       <width>261</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="channel_4_topic_1_enable">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>360</y>
+       <width>31</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="channel_4_topic_2_output">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>400</y>
+       <width>261</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="channel_4_topic_1_input">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>370</y>
+       <width>261</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="channel_4_lable_reconstruct">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>370</y>
+       <width>81</width>
+       <height>34</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Channel 4</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="channel_4_type_box">
+     <property name="geometry">
+      <rect>
+       <x>730</x>
+       <y>380</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <item>
+      <property name="text">
+       <string>Image</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>IMU</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Point Cloud</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Stamped Pose</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QCheckBox" name="channel_4_topic_2_enable">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>390</y>
+       <width>31</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="monitor">
+    <attribute name="title">
+     <string>Monitor</string>
+    </attribute>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>quit_button</sender>
+   <signal>clicked()</signal>
+   <receiver>Widget</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1394</x>
+     <y>1173</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>899</x>
+     <y>649</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

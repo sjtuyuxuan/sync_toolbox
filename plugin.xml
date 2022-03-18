@@ -1,0 +1,20 @@
+<library path="lib/libsync_toolbox">
+  <class name="sync_toolbox/MyPlugin" type="sync_toolbox::MyPlugin" base_class_type="rqt_gui_cpp::Plugin">
+    <description>
+      An external sync toolbox to create a great user interface.
+    </description>
+    <qtgui>
+      <!-- optional grouping...
+      <group>
+        <label>Group</label>
+      </group>
+      <group>
+        <label>Subgroup</label>
+      </group>
+      -->
+      <label>Hardware SYNC Toolbox</label>
+      <icon type="theme">system-help</icon>
+      <statustip>Great user interface to provide real value.</statustip>
+    </qtgui>
+  </class>
+</library>
