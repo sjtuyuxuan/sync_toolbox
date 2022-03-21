@@ -90,7 +90,7 @@ There are two ways to use the timestamps reconstruction: Bag export and online r
 
 Each General channel have two topic could be reconstructed independently (stereo case).
 
-There are four default massage type. <Image>, <Point Cloud>, <Imu>, and <PoseStamped>.
+There are four default massage type. `Image`, `Point Cloud`, `Imu`, and `PoseStamped`.
 
 The massage content will not changed. Only the `header` will changed.
 
