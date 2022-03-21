@@ -53,8 +53,11 @@ There are 4 general channel + 1 clock channel + 1 start indicate channel.
 ##### General channel
 
 General sensor trigger channel have three mode raising edge, falling edge, and double edge mode. 
+
 Frequency is from 1 - 999 Hz
+
 Offset is in unit of us, which can be positive (later than standard time) or negative.
+
 Pulse width is also in unit of us. Notice that it is disabled when double edge mode is checked.
 
 General channel is started synchronized when the `start` button is clicked.
@@ -76,6 +79,7 @@ There is high gate, low gate, and double pulse mode.
 ![gui](image/gui_2.png)
 
 First, click search button and find the correct serial port for microcontroller.
+
 Second, click the config setting button.
 
 ###  Step 3 : Set the timestamp reconstruction
