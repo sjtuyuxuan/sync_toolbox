@@ -80,7 +80,7 @@ Second, click the config setting button.
 
 ###  Step 3 : Set the timestamp reconstruction
 
-![gui_3](/home/yuxuan/catkin_ws/src/sync_toolbox/image/gui_3.png)
+![gui_3](image/gui_3.png)
 
 There are two ways to use the timestamps reconstruction: Bag export and online reflector.
 
