@@ -844,16 +844,6 @@
             </File>
           </Files>
         </Group>
-        <Group>
-          <GroupName>Readme</GroupName>
-          <Files>
-            <File>
-              <FileName>01.开发环境说明.txt</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Readme\01.开发环境说明.txt</FilePath>
-            </File>
-          </Files>
-        </Group>
       </Groups>
     </Target>
   </Targets>
